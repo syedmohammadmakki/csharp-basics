@@ -23,6 +23,7 @@ namespace Exercises_2
             {
                 Console.WriteLine(secondNumber);
             }
+           
 
         }
     }
