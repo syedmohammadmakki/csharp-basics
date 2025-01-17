@@ -23,45 +23,31 @@ namespace exercises_4
             //  1 demerit points should be incurred and displayed on the console.
             //  If the number of demerit points is above 12, the program should display License Suspended.
 
-     
-
-
-            Console.Write("enter your car speed :");
-            var carSpeed = Convert.ToDouble(Console.ReadLine());
-
-            var CitySpeedLimit = 70;
-            var count = 0;
-
-            if (carSpeed < CitySpeedLimit)
+            var citySpeedLimit = 70;
+            var demeritCount = 0;
+            
+            while (true)
             {
-                Console.WriteLine("your speed is ok.. ");
-            }else if (carSpeed > CitySpeedLimit)
-            {
-                Console.WriteLine("one point demerit  ..... ");
-            } while (count > 0)
-            {
-                count++;
-                if (count > 12)
+                Console.Write("enter your car speed :");
+                var carSpeed = Convert.ToInt32(Console.ReadLine());
+
+                if (carSpeed < citySpeedLimit)
+                {
+                    Console.WriteLine("your speed is ok.. ");
+                }else if (carSpeed > citySpeedLimit)
+                {
+                    int extraSpeed = carSpeed - citySpeedLimit;
+                    int numberOfDemerit = extraSpeed / 5;
+                    Console.WriteLine($"{numberOfDemerit} point demerit  ..... ");
+                    demeritCount = demeritCount + numberOfDemerit;
+                }
+              
+                if (demeritCount > 12)
                 {
                     Console.WriteLine("your license suspended");
+                    break;
                 }
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
