@@ -3,23 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp-basics", "Csharp-basics\Csharp-basics.csproj", "{AD1DC51D-0958-492C-B083-430248934FA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Csharp-basics", "Csharp-basics\Csharp-basics.csproj", "{AD1DC51D-0958-492C-B083-430248934FA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises-2", "Exercises-2\Exercises-2.csproj", "{994940A5-028E-4A6D-8220-0A3A37B052B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercises-2", "Exercises-2\Exercises-2.csproj", "{994940A5-028E-4A6D-8220-0A3A37B052B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises-3", "Exercises-3\Exercises-3.csproj", "{1B43EAD0-8F2E-454E-AA60-4531ECEB17E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercises-3", "Exercises-3\Exercises-3.csproj", "{1B43EAD0-8F2E-454E-AA60-4531ECEB17E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercises-4", "exercises-4\exercises-4.csproj", "{7E772863-7FC4-4739-A63E-DD2DCE7BB91E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercises-4", "exercises-4\exercises-4.csproj", "{7E772863-7FC4-4739-A63E-DD2DCE7BB91E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercises-5", "exercises-5\exercises-5.csproj", "{4B0B96DD-F66B-4D9F-9A6D-98BEA9BE5499}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercises-5", "exercises-5\exercises-5.csproj", "{4B0B96DD-F66B-4D9F-9A6D-98BEA9BE5499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercises-6", "exercises-6\exercises-6.csproj", "{FB0E502C-BB38-4550-A7B5-E0BE5F594A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercises-6", "exercises-6\exercises-6.csproj", "{FB0E502C-BB38-4550-A7B5-E0BE5F594A68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercises-7", "exercises-7\exercises-7.csproj", "{5DD4D5AE-B9C8-454C-B100-057C5B2950F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercises-7", "exercises-7\exercises-7.csproj", "{5DD4D5AE-B9C8-454C-B100-057C5B2950F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises-8", "Exercises-8\Exercises-8.csproj", "{782FED13-FBCF-4A71-AFBD-5F9041BAECE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercises-8", "Exercises-8\Exercises-8.csproj", "{782FED13-FBCF-4A71-AFBD-5F9041BAECE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercises-9", "exercises-9\exercises-9.csproj", "{78BD9135-AEEF-402A-B4D4-C0AACB049341}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercises-9", "exercises-9\exercises-9.csproj", "{78BD9135-AEEF-402A-B4D4-C0AACB049341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecercises_list", "Ecercises_list\Ecercises_list.csproj", "{0D3C8D68-E8D7-419F-986C-6714B6020B8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,8 +65,15 @@ Global
 		{78BD9135-AEEF-402A-B4D4-C0AACB049341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78BD9135-AEEF-402A-B4D4-C0AACB049341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78BD9135-AEEF-402A-B4D4-C0AACB049341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3C8D68-E8D7-419F-986C-6714B6020B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3C8D68-E8D7-419F-986C-6714B6020B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3C8D68-E8D7-419F-986C-6714B6020B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3C8D68-E8D7-419F-986C-6714B6020B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F357A390-864B-49B9-9483-0DBE27D6C5E2}
 	EndGlobalSection
 EndGlobal
