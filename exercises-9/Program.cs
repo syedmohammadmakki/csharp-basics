@@ -17,7 +17,7 @@
           
             
                for (int i = 0; i < 4; i++)
-            {
+               {
 
                 Console.Write("enter a guess number :");
                 var guess = Convert.ToInt32(Console.ReadLine());
@@ -25,10 +25,8 @@
                 {
                     Console.WriteLine("you win!");
                 }
-            }
-            Console.WriteLine("your loss");
-                
-                
+               }
+                  Console.WriteLine("your loss");
                   
                 
             
