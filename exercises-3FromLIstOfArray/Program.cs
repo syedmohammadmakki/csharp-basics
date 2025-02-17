@@ -29,13 +29,8 @@
                     numbers.Add(userNumber);
                     num++;
                 }
-              
-
-              
             }
-                 
-                  numbers.Sort();
-
+            numbers.Sort();
           //  Console.WriteLine(string.Join(",",numbers));
           foreach (int number in numbers)
             {
