@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BulkyWeb.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 </head>
 <body>
     <header>
@@ -25,9 +26,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link k"  asp-controller="Category" asp-action="Index">Category</a>
-                        </li> <li class="nav-item">
+                        </li> 
+                        <li class="nav-item">
                             <a class="nav-link "  asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li><li class="nav-item">
+                        </li> 
+                        <li class="nav-item">
                             <a class="nav-link " asp-controller="Category" asp-action="Simba">Simba list</a>
                         </li>
                     </ul>
@@ -37,6 +40,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            <partial name="_Notification"/>
             @RenderBody()
         </main>
     </div>
