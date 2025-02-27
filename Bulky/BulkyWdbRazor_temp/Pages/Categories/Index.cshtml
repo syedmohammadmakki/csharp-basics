@@ -12,7 +12,7 @@
 			</h2>
 		</div>
 		<div class="col-6 text-end">
-			<a asp-page="Categories/Create"  class=" btn btn-primary">
+			<a asp-page="/Categories/Create"  class=" btn btn-primary">
 					<i class="bi bi-plus"></i>	create new category
 			</a>
 		</div>
@@ -41,10 +41,10 @@
 			<td>@obj.DisplayOrder</td>
 				<td>
 					<div class="w-75 btn-group" role="group">
-							<a asp-page="Category"  asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+							<a asp-page="/Categories"  asp-route-id="@obj.Id" class="btn btn-primary mx-2">
 								<i class="bi bi-pencil-fill"></i>Edit
 							</a>
-							<a asp-page="Category/delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
+							<a asp-page="/Categories/delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
 									<i class="bi bi-trash-fill"></i> Delete
 							</a>
 					</div>
