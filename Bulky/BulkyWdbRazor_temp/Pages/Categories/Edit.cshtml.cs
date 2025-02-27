@@ -9,7 +9,7 @@ namespace BulkyWdbRazor_temp.Pages.Categories
     public class EditModel : PageModel
     {
         private readonly ApplicationDbContext _db;
-        public Category? Category { get; set; }
+        public Category Category { get; set; }
         public EditModel(ApplicationDbContext db)
         {
             _db = db;
