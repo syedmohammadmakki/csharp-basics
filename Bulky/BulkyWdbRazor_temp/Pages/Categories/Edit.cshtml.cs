@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BulkyWdbRazor_temp.Pages.Categories
 {
-        [BindProperties]
+    [BindProperties]
     public class EditModel : PageModel
     {
         private readonly ApplicationDbContext _db;
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
         public EditModel(ApplicationDbContext db)
         {
             _db = db;
@@ -28,6 +28,7 @@ namespace BulkyWdbRazor_temp.Pages.Categories
             {
             _db.Categories.Update(Category);
             _db.SaveChanges();
+                TempData["success"] = "Category updated successfully";
             return RedirectToPage("Index");
 
             }
