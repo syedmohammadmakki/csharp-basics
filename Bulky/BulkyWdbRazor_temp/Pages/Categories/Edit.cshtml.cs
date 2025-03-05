@@ -9,7 +9,7 @@ namespace BulkyWdbRazor_temp.Pages.Categories
     public class EditModel : PageModel
     {
         private readonly ApplicationDbContext _db;
-        public Category? Category { get; set; }
+        public Category Category { get; set; }
         public EditModel(ApplicationDbContext db)
         {
             _db = db;
@@ -26,10 +26,10 @@ namespace BulkyWdbRazor_temp.Pages.Categories
         {
             if (ModelState.IsValid)
             {
-            _db.Categories.Update(Category);
-            _db.SaveChanges();
-                TempData["success"] = "Category updated successfully";
-            return RedirectToPage("Index");
+                _db.Categories.Update(Category);
+                _db.SaveChanges();
+                   TempData["success"] = "Category updated successfully";
+                return RedirectToPage("Index");
 
             }
             return Page();

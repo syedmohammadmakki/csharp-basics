@@ -1,9 +1,9 @@
-using BulkyWeb.data;
+using Bulky.DataAcess.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BulkyWeb
 {
-    public class Program
+	public class Program
     {
         public static void Main(string[] args)
         {

@@ -1,7 +1,7 @@
-﻿using BulkyWeb.Models;
+﻿using Bulky.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace BulkyWeb.data
+namespace Bulky.DataAcess.Data
 {
     public class ApplicationDbContext : DbContext 
     {
@@ -10,7 +10,7 @@ namespace BulkyWeb.data
             
         }
         public DbSet<Category> Categories { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
                 new Category {  Id = 1, Name = "Action", DisplayOrder = 1},
