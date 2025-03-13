@@ -1,7 +1,9 @@
-using Bulky.DataAcess.Data;
+using BulkyBook.DataAccess.Repository.IRepository;
+using BulkyBook.DataAcess.Data;
 using Microsoft.EntityFrameworkCore;
+using BulkyBook.DataAccess.Repository;
 
-namespace BulkyWeb
+namespace BulkyBookWeb
 {
 	public class Program
     {
@@ -15,10 +17,11 @@ namespace BulkyWeb
                 (options=> options.UseSqlServer(builder.
                 Configuration.GetConnectionString("defaultConnection")));
 
+		    builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
 
-            var app = builder.Build();
+			var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -37,7 +40,7 @@ namespace BulkyWeb
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
         }

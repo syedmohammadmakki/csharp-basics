@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace BulkyWeb.Views.category
+namespace BulkyBookWeb.Views.category
 {
     public class CreateModel : PageModel
     {
