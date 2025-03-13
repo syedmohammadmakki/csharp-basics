@@ -7,7 +7,7 @@ using BulkyBook.Models;
 
 namespace BulkyBook.DataAccess.Repository.IRepository
 {
-	public interface ICategoryRepository : IRepository<Category>
+	public interface IProductRepository : IRepository<Category>
 	{
 		void Remove(Category obj);
 		void Update(Category obj);
